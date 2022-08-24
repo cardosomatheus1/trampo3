@@ -82,7 +82,7 @@ export default class Plc extends Component {
                         dado.hora = hour
                         dado.data = dateOk
                         let celula = `${celulaInicial}${3}`
-                        let caminho = `='S:\\Producao\\PRODUÇÃO DE SBC\\${ano}\\${mesEscrito}\\${date}\\[1CAM-PRO-PAD-100-003_Rev02 Anexo XIV Relatorio de turno.XLS]23x07'!${celula}`
+                        let caminho = `='S:\\Producao\\PRODUÇÃO DE SBC\\${ano}\\${mesEscrito}\\${date}\\[1CAM-PRO-PAD-100-003_Rev02 Anexo XIV Relatorio de turno.xlsx]23x07'!${celula}`
                         dado.caminho1 = caminho
                         array.push(dado)
                     }
@@ -96,7 +96,7 @@ export default class Plc extends Component {
                         dado.hora = hour
                         dado.data = dateOk
                         let celula = `${celulaInicial}${3}`
-                        let caminho = `='S:\\Producao\\PRODUÇÃO DE SBC\\${ano}\\${mesEscrito}\\${date}\\[1CAM-PRO-PAD-100-003_Rev02 Anexo XIV Relatorio de turno.XLS]07x15'!${celula}`
+                        let caminho = `='S:\\Producao\\PRODUÇÃO DE SBC\\${ano}\\${mesEscrito}\\${date}\\[1CAM-PRO-PAD-100-003_Rev02 Anexo XIV Relatorio de turno.xlsx]07x15'!${celula}`
                         dado.caminho1 = caminho
                         array.push(dado)
                     }
@@ -106,7 +106,7 @@ export default class Plc extends Component {
                         dado.hora = hour
                         dado.data = dateOk
                         let celula = `${celulaInicial}${3}`
-                        let caminho = `='S:\\Producao\\PRODUÇÃO DE SBC\\${ano}\\${mesEscrito}\\${date}\\[1CAM-PRO-PAD-100-003_Rev02 Anexo XIV Relatorio de turno.XLS]15x23'!${celula}`
+                        let caminho = `='S:\\Producao\\PRODUÇÃO DE SBC\\${ano}\\${mesEscrito}\\${date}\\[1CAM-PRO-PAD-100-003_Rev02 Anexo XIV Relatorio de turno.xlsx]15x23'!${celula}`
                         dado.caminho1 = caminho
                         array.push(dado)
                     }
@@ -172,7 +172,7 @@ export default class Plc extends Component {
                         dado.hora = hour
                         dado.data = dateOk
                         let celula = `${celulaInicial}${3}`
-                        let caminho = `='S:\\Producao\\PRODUÇÃO DE SBC\\${ano}\\${mesEscrito}\\${date}\\[1CAM-PRO-PAD-100-003_Rev02 Anexo XIV Relatorio de turno.XLS]23x07'!${celula}`
+                        let caminho = `='S:\\Producao\\PRODUÇÃO DE SBC\\${ano}\\${mesEscrito}\\${date}\\[1CAM-PRO-PAD-100-003_Rev02 Anexo XIV Relatorio de turno.xlsx]23x07'!${celula}`
                         dado.caminho1 = caminho
                         array.push(dado)
                     }
@@ -186,7 +186,7 @@ export default class Plc extends Component {
                         dado.hora = hour
                         dado.data = dateOk
                         let celula = `${celulaInicial}${3}`
-                        let caminho = `='S:\\Producao\\PRODUÇÃO DE SBC\\${ano}\\${mesEscrito}\\${date}\\[1CAM-PRO-PAD-100-003_Rev02 Anexo XIV Relatorio de turno.XLS]07x15'!${celula}`
+                        let caminho = `='S:\\Producao\\PRODUÇÃO DE SBC\\${ano}\\${mesEscrito}\\${date}\\[1CAM-PRO-PAD-100-003_Rev02 Anexo XIV Relatorio de turno.xlsx]07x15'!${celula}`
                         dado.caminho1 = caminho
                         array.push(dado)
                     }
@@ -196,7 +196,7 @@ export default class Plc extends Component {
                         dado.hora = hour
                         dado.data = dateOk
                         let celula = `${celulaInicial}${3}`
-                        let caminho = `='S:\\Producao\\PRODUÇÃO DE SBC\\${ano}\\${mesEscrito}\\${date}\\[1CAM-PRO-PAD-100-003_Rev02 Anexo XIV Relatorio de turno.XLS]15x23'!${celula}`
+                        let caminho = `='S:\\Producao\\PRODUÇÃO DE SBC\\${ano}\\${mesEscrito}\\${date}\\[1CAM-PRO-PAD-100-003_Rev02 Anexo XIV Relatorio de turno.xlsx]15x23'!${celula}`
                         dado.caminho1 = caminho
                         array.push(dado)
                     }
