@@ -64,6 +64,7 @@ export default class Plc extends Component {
 
                 for (let i = 1; i <= 31; i++) {
                     let day = ''
+                    let dado = {}
                     if (i < 10) {
                         day = `0${i}`
                     } else {
@@ -71,45 +72,50 @@ export default class Plc extends Component {
                     }
                     let date = `${day}.${data}`
                     let dateOk = `${day}/${mes}/${ano}`
-                    let hour = ''
-                    for (let j = 16; j <= 23; j++) {
-                        let dado = {}
-                        if (j === 16) {
-                            hour = '23'
-                        } else {
-                            hour = `0${j - 16}`
-                        }
-                        dado.hora = hour
-                        dado.data = dateOk
-                        let celula = `${celulaInicial}${3}`
-                        let caminho = `='S:\\Producao\\PRODUÇÃO DE SBC\\${ano}\\${mesEscrito}\\${date}\\[1CAM-PRO-PAD-100-003_Rev02 Anexo XIV Relatorio de turno.xlsx]23x07'!${celula}`
-                        dado.caminho1 = caminho
-                        array.push(dado)
-                    }
-                    for (let j = 16; j <= 23; j++) {
-                        let dado = {}
-                        if (j > 19) {
-                            hour = `0${j - 9}`
-                        } else {
-                            hour = `${j - 9}`
-                        }
-                        dado.hora = hour
-                        dado.data = dateOk
-                        let celula = `${celulaInicial}${3}`
-                        let caminho = `='S:\\Producao\\PRODUÇÃO DE SBC\\${ano}\\${mesEscrito}\\${date}\\[1CAM-PRO-PAD-100-003_Rev02 Anexo XIV Relatorio de turno.xlsx]07x15'!${celula}`
-                        dado.caminho1 = caminho
-                        array.push(dado)
-                    }
-                    for (let j = 16; j <= 23; j++) {
-                        let dado = {}
-                        hour = `${j - 1}`
-                        dado.hora = hour
-                        dado.data = dateOk
-                        let celula = `${celulaInicial}${3}`
-                        let caminho = `='S:\\Producao\\PRODUÇÃO DE SBC\\${ano}\\${mesEscrito}\\${date}\\[1CAM-PRO-PAD-100-003_Rev02 Anexo XIV Relatorio de turno.xlsx]15x23'!${celula}`
-                        dado.caminho1 = caminho
-                        array.push(dado)
-                    }
+                    dado.data = dateOk
+                    let celula = `${celulaInicial}${3}`
+                    let caminho = `='S:\\Producao\\PRODUÇÃO DE SBC\\${ano}\\${mesEscrito}\\${date}\\[1CAM-PRO-PAD-100-003_Rev02 Anexo XIV Relatorio de turno.xlsx]23x07'!${celula}`
+                    dado.caminho1 = caminho
+                    array.push(dado)
+                    // let hour = ''
+                    // for (let j = 16; j <= 23; j++) {
+                    //     let dado = {}
+                    //     if (j === 16) {
+                    //         hour = '23'
+                    //     } else {
+                    //         hour = `0${j - 16}`
+                    //     }
+                    //     dado.hora = hour
+                    //     dado.data = dateOk
+                    //     let celula = `${celulaInicial}${3}`
+                    //     let caminho = `='S:\\Producao\\PRODUÇÃO DE SBC\\${ano}\\${mesEscrito}\\${date}\\[1CAM-PRO-PAD-100-003_Rev02 Anexo XIV Relatorio de turno.xlsx]23x07'!${celula}`
+                    //     dado.caminho1 = caminho
+                    //     array.push(dado)
+                    // }
+                    // for (let j = 16; j <= 23; j++) {
+                    //     let dado = {}
+                    //     if (j > 19) {
+                    //         hour = `0${j - 9}`
+                    //     } else {
+                    //         hour = `${j - 9}`
+                    //     }
+                    //     dado.hora = hour
+                    //     dado.data = dateOk
+                    //     let celula = `${celulaInicial}${3}`
+                    //     let caminho = `='S:\\Producao\\PRODUÇÃO DE SBC\\${ano}\\${mesEscrito}\\${date}\\[1CAM-PRO-PAD-100-003_Rev02 Anexo XIV Relatorio de turno.xlsx]07x15'!${celula}`
+                    //     dado.caminho1 = caminho
+                    //     array.push(dado)
+                    // }
+                    // for (let j = 16; j <= 23; j++) {
+                    //     let dado = {}
+                    //     hour = `${j - 1}`
+                    //     dado.hora = hour
+                    //     dado.data = dateOk
+                    //     let celula = `${celulaInicial}${3}`
+                    //     let caminho = `='S:\\Producao\\PRODUÇÃO DE SBC\\${ano}\\${mesEscrito}\\${date}\\[1CAM-PRO-PAD-100-003_Rev02 Anexo XIV Relatorio de turno.xlsx]15x23'!${celula}`
+                    //     dado.caminho1 = caminho
+                    //     array.push(dado)
+                    // }
                 }
             } else {
                 mes = `${l}`
@@ -154,6 +160,7 @@ export default class Plc extends Component {
 
                 for (let i = 1; i <= 31; i++) {
                     let day = ''
+                    let dado = {}
                     if (i < 10) {
                         day = `0${i}`
                     } else {
@@ -161,45 +168,50 @@ export default class Plc extends Component {
                     }
                     let date = `${day}.${data}`
                     let dateOk = `${day}/${mes}/${ano}`
-                    let hour = ''
-                    for (let j = 16; j <= 23; j++) {
-                        let dado = {}
-                        if (j === 16) {
-                            hour = '23'
-                        } else {
-                            hour = `0${j - 16}`
-                        }
-                        dado.hora = hour
-                        dado.data = dateOk
-                        let celula = `${celulaInicial}${3}`
-                        let caminho = `='S:\\Producao\\PRODUÇÃO DE SBC\\${ano}\\${mesEscrito}\\${date}\\[1CAM-PRO-PAD-100-003_Rev02 Anexo XIV Relatorio de turno.xlsx]23x07'!${celula}`
-                        dado.caminho1 = caminho
-                        array.push(dado)
-                    }
-                    for (let j = 16; j <= 23; j++) {
-                        let dado = {}
-                        if (j > 19) {
-                            hour = `0${j - 9}`
-                        } else {
-                            hour = `${j - 9}`
-                        }
-                        dado.hora = hour
-                        dado.data = dateOk
-                        let celula = `${celulaInicial}${3}`
-                        let caminho = `='S:\\Producao\\PRODUÇÃO DE SBC\\${ano}\\${mesEscrito}\\${date}\\[1CAM-PRO-PAD-100-003_Rev02 Anexo XIV Relatorio de turno.xlsx]07x15'!${celula}`
-                        dado.caminho1 = caminho
-                        array.push(dado)
-                    }
-                    for (let j = 16; j <= 23; j++) {
-                        let dado = {}
-                        hour = `${j - 1}`
-                        dado.hora = hour
-                        dado.data = dateOk
-                        let celula = `${celulaInicial}${3}`
-                        let caminho = `='S:\\Producao\\PRODUÇÃO DE SBC\\${ano}\\${mesEscrito}\\${date}\\[1CAM-PRO-PAD-100-003_Rev02 Anexo XIV Relatorio de turno.xlsx]15x23'!${celula}`
-                        dado.caminho1 = caminho
-                        array.push(dado)
-                    }
+                    dado.data = dateOk
+                    let celula = `${celulaInicial}${3}`
+                    let caminho = `='S:\\Producao\\PRODUÇÃO DE SBC\\${ano}\\${mesEscrito}\\${date}\\[1CAM-PRO-PAD-100-003_Rev02 Anexo XIV Relatorio de turno.xlsx]23x07'!${celula}`
+                    dado.caminho1 = caminho
+                    array.push(dado)
+                    // let hour = ''
+                    // for (let j = 16; j <= 23; j++) {
+                    //     let dado = {}
+                    //     if (j === 16) {
+                    //         hour = '23'
+                    //     } else {
+                    //         hour = `0${j - 16}`
+                    //     }
+                    //     dado.hora = hour
+                    //     dado.data = dateOk
+                    //     let celula = `${celulaInicial}${3}`
+                    //     let caminho = `='S:\\Producao\\PRODUÇÃO DE SBC\\${ano}\\${mesEscrito}\\${date}\\[1CAM-PRO-PAD-100-003_Rev02 Anexo XIV Relatorio de turno.xlsx]23x07'!${celula}`
+                    //     dado.caminho1 = caminho
+                    //     array.push(dado)
+                    // }
+                    // for (let j = 16; j <= 23; j++) {
+                    //     let dado = {}
+                    //     if (j > 19) {
+                    //         hour = `0${j - 9}`
+                    //     } else {
+                    //         hour = `${j - 9}`
+                    //     }
+                    //     dado.hora = hour
+                    //     dado.data = dateOk
+                    //     let celula = `${celulaInicial}${3}`
+                    //     let caminho = `='S:\\Producao\\PRODUÇÃO DE SBC\\${ano}\\${mesEscrito}\\${date}\\[1CAM-PRO-PAD-100-003_Rev02 Anexo XIV Relatorio de turno.xlsx]07x15'!${celula}`
+                    //     dado.caminho1 = caminho
+                    //     array.push(dado)
+                    // }
+                    // for (let j = 16; j <= 23; j++) {
+                    //     let dado = {}
+                    //     hour = `${j - 1}`
+                    //     dado.hora = hour
+                    //     dado.data = dateOk
+                    //     let celula = `${celulaInicial}${3}`
+                    //     let caminho = `='S:\\Producao\\PRODUÇÃO DE SBC\\${ano}\\${mesEscrito}\\${date}\\[1CAM-PRO-PAD-100-003_Rev02 Anexo XIV Relatorio de turno.xlsx]15x23'!${celula}`
+                    //     dado.caminho1 = caminho
+                    //     array.push(dado)
+                    // }
                 }
             }
         }
